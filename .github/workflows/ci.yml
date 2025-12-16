@@ -1,0 +1,25 @@
+name: CI débutant
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  demo-ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+
+      - name: Tests
+        run: |
+          echo "Tests en cours..."
+          exit 0
+
+      - name: Build
+        run: echo "Build terminé ✅"
+
+      - name: Fin
+        run: echo "Pipeline CI/CD réussi 🎉"
