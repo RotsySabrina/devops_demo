@@ -1,5 +1,5 @@
 const assert = require("assert");
-const addition = require("./index.js");
+const addition = require("./addition");
 
 try {
   assert.strictEqual(addition(2, 3), 5);

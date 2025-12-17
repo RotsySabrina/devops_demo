@@ -1,10 +1,7 @@
 const express = require("express");
+const addition = require("./addition");
 const app = express();
 const port = process.env.PORT || 3000;
-
-function addition(a, b){
-    return a + b;
-}
 
 const result = addition(2, 3);
 console.log("Résultat :", result);
