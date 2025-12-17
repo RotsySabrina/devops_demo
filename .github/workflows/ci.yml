@@ -20,5 +20,8 @@ jobs:
         
         - name: Lancer les tests
           run: node test.js
+        
+        - name: index
+          run: node index.js
 
     
