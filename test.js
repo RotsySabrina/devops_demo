@@ -1,5 +1,10 @@
-const assert = require('assert');
-const addition = (a, b) => a + b;
+const assert = require("assert");
+const addition = require("./index.js");
 
-assert.strictEqual(addition(2, 3), 5);
-console.log("Test OK ✔️");
+try {
+  assert.strictEqual(addition(2, 3), 5);
+  console.log("Test OK ✔️");
+} catch (error) {
+  console.log("Test échoué ❌");
+  process.exit(1);
+}
